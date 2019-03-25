@@ -1,0 +1,9 @@
+<h2>Popular Films</h2>
+
+<div class="card-columns mt-3">
+  {{#each films as |film|}}
+    {{>film film=film }}
+  {{else}}
+  <p>Empty films!!</p>
+  {{/each}}
+</div>
